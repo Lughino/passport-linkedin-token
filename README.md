@@ -1,14 +1,16 @@
-# passport-linkedin-token
+# passport-linkedin-token-bc
 
 [Passport](http://passportjs.org/) strategy for authenticating with [LinkedIn](https://linkedin.com/) access tokens using the OAuth 2.0 API.
 
 This module lets you authenticate using LinkedIn in your Node.js applications.
 By plugging into Passport, LinkedIn authentication can be easily and unobtrusively integrated into any application or framework that supports [Connect](http://www.senchalabs.org/connect/)-style middleware, including [Express](http://expressjs.com/).
 
+This module is a [passport-linkedin-token](https://github.com/ashaman1991/passport-linkedin-token) fork which maintains compatibility with node 0.x
+
 ## Installation
 
 ```shell
-npm install passport-linked-in-token
+npm install passport-linked-in-token-bc
 ```
 
 ## Usage
@@ -68,7 +70,7 @@ GET /auth/linkedin?oauth2_access_token=<LINKEDIN_TOKEN>
 
 The MIT License (MIT)
 
-Copyright (c) 2015 Andrew Orel
+Copyright (c) 2015 Luca Pau
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal

@@ -1,16 +1,16 @@
 {
-  "version": "1.0.1",
-  "name": "passport-linked-in-token",
-  "description": "Passport strategy for authenticating with LinkedIn via OAuth2 access tokens",
+  "version": "1.1.0",
+  "name": "passport-linked-in-token-bc",
+  "description": "Passport strategy for authenticating with LinkedIn via OAuth2 access tokens (backward compatibility with node 0.x)",
   "main": "lib/index.js",
   "scripts": {
     "compile": "babel src --out-dir lib",
-    "postinstall": "npm run compile",
+    "prepublish": "npm run compile",
     "test": "babel-node ./node_modules/.bin/isparta cover _mocha"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/ashaman1991/passport-linkedin-token.git"
+    "url": "https://github.com/Lughino/passport-linkedin-token.git"
   },
   "keywords": [
     "passport",
@@ -20,30 +20,23 @@
     "authentication"
   ],
   "author": {
-    "name": "Andrew Orel",
-    "email": "ashaman1991@gmail.com",
-    "url": "https://github.com/ashaman1991"
+    "name": "Luca Pau",
+    "email": "luca.pau82@gmail.com",
+    "url": "https://github.com/Lughino"
   },
-  "contributors": [
-    {
-      "name": "ghaiklor",
-      "email": "ghaiklor@gmail.com",
-      "url": "https://www.facebook.com/ghaiklor"
-    }
-  ],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/ashaman1991/passport-linkedin-token/issues"
+    "url": "https://github.com/Lughino/passport-linkedin-token/issues"
   },
-  "homepage": "https://github.com/ashaman1991/passport-linkedin-token",
+  "homepage": "https://github.com/Lughino/passport-linkedin-token",
   "dependencies": {
     "lodash": "3.10.1",
     "passport-oauth": "1.0.0",
-    "babel-preset-es2015": "6.3.13",
-    "babel-plugin-add-module-exports": "0.1.2"
   },
   "devDependencies": {
     "babel-cli": "6.3.17",
+    "babel-preset-es2015": "6.3.13",
+    "babel-plugin-add-module-exports": "0.1.2"
     "chai": "3.4.1",
     "chai-passport-strategy": "0.2.0",
     "cz-conventional-changelog": "1.1.5",
@@ -51,6 +44,7 @@
     "mocha": "2.3.4",
     "sinon": "1.17.2"
   },
+  "engine": { "node" : ">=0.10" } },
   "config": {
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog"
